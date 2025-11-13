@@ -1,0 +1,28 @@
+package c08_oop;
+import c08_oop.Person;
+
+// Clases y objetos
+
+public class Classes {
+    public static void main(String[] args) {
+        var person = new Person("Fabricio", -22, "123456789A");
+
+//        person.name = "Brais";
+//        person.age = 38;
+
+        person.sayHello();
+
+        person.name = "Brais Moure";
+        System.out.println(person.name);
+
+//        person.id = "123456789A";
+
+        System.out.println(person.getId());
+
+        person.setAge(22);
+        System.out.println(person.getAge());
+
+        var person2 = new Person("MoureDev", 18, "123456789B");
+        person2.sayHello();
+    }
+}
